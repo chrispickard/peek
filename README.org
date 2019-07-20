@@ -5,12 +5,12 @@
 ** Ok, if it's the same as ~tee~ into stderr, why did you make this?
    I needed visibility into my shell pipelines and I wanted to see how much slower go's std library
    was for the task. It turns out that for small inputs it's marginally slower and for large inputs
-   it's way faster (2x the throughput on very large files, see [[*Benchmarking][Benchmarking]])
+   it's way faster (2x the throughput on very large files, see [[Benchmarking]])
 ** Installation
    ~go get github.com/chrispickard/peek~
 ** Usage
    - Insert into a shell pipeline, ~peek~ will print stdin to stderr and pass it through to stdout
-* Benchmarking
+* <<Benchmarking>>
   - run ~./bench.sh~
-  - requires [[https://github.com/sharkdp/hyperfine][hyperfine]]
+  - requires hyperfine
 
