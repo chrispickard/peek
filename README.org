@@ -10,7 +10,4 @@
    ~go get github.com/chrispickard/peek~
 ** Usage
    - Insert into a shell pipeline, ~peek~ will print stdin to stderr and pass it through to stdout
-* Benchmarking
-  - run ~./bench.sh~
-  - requires hyperfine
 

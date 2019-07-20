@@ -1,0 +1,7 @@
+* Benchmarking
+  - run ~./bench.sh~
+  - requires [[https://github.com/sharkdp/hyperfine][hyperfine]]
+  - bench.sh will glob anything in the bench directory and cat it through peek, it can help to add
+    files in there that are too large to fit in this git repo, such as the 10GB (uncompressed)
+    Google ngrams dataset.
+    ~curl --compressed http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-2gram-20120701-ma.gz~
